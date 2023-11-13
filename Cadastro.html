@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="./css/styles.css"/>
+<head >
+
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <center>
+            
+        <img class=" login-logo" src="assets/images/Borsatto.png" height="260" width="315">
+        <fieldset>
+        <img class="becker login-icon" src="https://static.vecteezy.com/ti/vetor-gratis/t2/600617-icone-de-tubo-de-ensaio-liquido-no-laboratorio-de-ciencia-vetor.jpg" height="75" width="110" >
+        <i class="becker fas fa-flask login-icon-sm fa-2x"></i>
+
+           
+        <i class="becker fas fa-flask login-icon-sm fa-2x"></i>
+        <p id="title" class="text-center">Área do Paciente</p>        
+
+            
+            <input required type="text" id="cpf" name="cpf" placeholder="CPF" autofocus aria-label="Digite o seu CPF"/>
+                <i class="fa fa-user"></i>
+                <br>
+                <br>
+                <br>
+            <input required type="text" id="nascimento" name="birthdate" placeholder="Data de Nascimento" aria-label="Digite a sua data de nascimento"/>
+                <i class="fa fa-calendar"></i>
+                <br>
+                <br>
+                <br>
+            <div class="error">Seus resultados não estão disponíveis</div>
+            <br>
+
+            <button type="Consultas" id="Consultas" class="button-arounder"  input type="submit" value="Consultas">Entrar</button>
+        </form>
+    </fieldset>
+    <style>
+        fieldset{
+    width: 500px;
+    height: 330px;
+    padding: 20px;
+    border-color: rgb(235, 159, 191);
+    border-style: dashed;
+        }
+        </style>
+    </center>
+        <form id="form-step-2" autocomplete="off" class="login" action="https://api.feegow.com.br/patient-interface/w9kG/login" style="display: none">
+            <input type="hidden" name="_token" value="8eswqJLX9277MJHQp1U0NlYyFVKDiiZI9uPbNZ3p">
+
+            <input type="hidden" name="step" value="2">
+
+            <div class="formheader">
+                <p class="title">Verificação de segurança</p>
+            </div>
+
+            <h6>Escolha uma forma de verificação:</h6>
+
+            <div class="form-check phone">
+                <input class="form-check-input" id="loginRadioSMS" type="radio" name="auth_type" value="sms" required>
+                <label class="form-check-label" for="loginRadioSMS"></label>
+            </div>
+
+            <div class="form-check email">
+                <input class="form-check-input" id="loginRadioEmail" type="radio" name="auth_type" value="email" required>
+                <label class="form-check-label" for="loginRadioEmail"></label>
+            </div>
+            <i class="spin"></i>
+
+            <a class="info-link not-mine" href="#" onclick="openNotMine()">Nenhum dos dados acima lhe pertence? Clique aqui.</a>
+
+            <div class="token-block"></div>
+                <hr/>
+
+                <p class="info">Enviamos um código de autenticação para o seu <span></span>.<br>
+                    Preencha abaixo o número recebido para prosseguir:
+                </p>
+
+                <a class="info-link link-resend" href="#" onclick="resendConfirmationCode()">Não recebeu? Clique aqui para Reenviar.</a>
+
+            <div class="error"></div>
+
+            
+        </form>
+        
+        </div>
+        </body>
+</html>

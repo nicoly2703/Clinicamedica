@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <img class=" login-logo" src="./assets/images/Borsatto.png">         
+    <form id="form-step-1" autocomplete="off" class="login" action="https://api.feegow.com.br/patient-interface/w9kG/login">
+        <input type="hidden" name="_token" value="8eswqJLX9277MJHQp1U0NlYyFVKDiiZI9uPbNZ3p">
+
+        <div class="formheader">
+            <img class="becker login-icon" src="//api.feegow.com.br/modules/patientinterface/img/becker.svg">
+            <i class="becker fas fa-flask login-icon-sm fa-2x"></i>
+            <p class="title">Área do Paciente</p>
+        </div>
+                        <input required type="text" id="cpf" name="cpf" placeholder="CPF" autofocus aria-label="Digite o seu CPF"/>
+            <i class="fa fa-user"></i>
+            <input required type="text" id="nascimento" name="birthdate" placeholder="Data de Nascimento" aria-label="Digite a sua data de nascimento"/>
+            <i class="fa fa-calendar"></i>
+                    <div class="error">Seus resultados não estão disponíveis</div>
+
+        <button>
+            <i class="spinner"></i>
+            <span class="state">Entrar</span>
+        </button>
